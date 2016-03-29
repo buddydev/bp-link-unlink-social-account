@@ -75,7 +75,7 @@ class BP_Link_Unlink_Social_Account {
 		delete_user_meta( $user_id, 'wsl_current_provider' );
 		delete_user_meta( $user_id, 'wsl_current_user_image' );
 
-		echo "Account Unlinked";
+		_e( "Account Unlinked", "bp-link-unlink-social-account" );
 		exit;
 	}
 }

@@ -1,9 +1,13 @@
 <?php
 
 /**
- * Plugin Name: BP Link Unlink Social Account
- * Description: This plugin is used for link or unlink their social account to the site.
+ * Plugin Name: BuddyPress Link Unlink Social Account
+ * Plugin URI: http://buddydev.com/plugins/bp-link-unlink-social-account/
+ * Description: This plugin allows linking/delinking social accounts with BuddyPress user account with the help of <a href="https://wordpress.org/plugins/wordpress-social-login">WordPress Social Login</a>.
  * Author: Ravi Sharma
+ * Author URI: http://buddydev.com
+ * Version: 1.0.0
+ * License: GPLv2 or later
  */
 
 class BP_Link_Unlink_Social_Account_Helper {
