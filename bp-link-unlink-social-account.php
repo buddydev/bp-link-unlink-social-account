@@ -31,7 +31,7 @@ class BP_Link_Unlink_Social_Account_Helper {
 	public function setup() {
 
 		add_action( 'bp_loaded', array( $this, 'load_file' ) );
-
+		add_action( 'bp_init', array( $this, 'load_textdomain' ), 2 );
 	}
 
 	public function load_file() {
@@ -41,6 +41,10 @@ class BP_Link_Unlink_Social_Account_Helper {
 		}
 
 		require_once plugin_dir_path( __FILE__ ).'class-bp-link-unlink-social-account.php';
+	}
+
+	public function load_textdomain() {
+		load_plugin_textdomain( '', false, dirname( plugin_basename( __FILE__ ) ).'/languages' );
 	}
 }
 BP_Link_Unlink_Social_Account_Helper::get_instance();

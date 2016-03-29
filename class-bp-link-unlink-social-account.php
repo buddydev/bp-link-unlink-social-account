@@ -32,13 +32,18 @@ class BP_Link_Unlink_Social_Account {
 		$user_id     = get_current_user_id();
 		$social_meta = get_user_meta( $user_id, 'wsl_current_provider', true );
 
-		echo '<div id="message"></div>';
+	?>
+
+		<label for=""><?php  _e('Link/Unlink Social Account','bp-link-unlink-social-account'); ?></label>
+		<div id="message"></div>
+	<?php
+
 		if ( $social_meta ) {
 
-			?>
+		?>
 
 			<div class="submit">
-				<input type="button" id="unlink_social_account" value="Unlink <?php echo $social_meta; ?> Account">
+				<input type="button" id="unlink_social_account" value="<?php _e( ( 'Unlink '. $social_meta .' Account' ), 'bp-link-unlink-social-account'); ?>">
 			</div>
 
 			<script type="text/javascript">
